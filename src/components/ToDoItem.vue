@@ -10,14 +10,13 @@
       <label :for="id" class="checkbox-label">{{label}}</label>
     </div>
     <div class="btn-group">
-<button
-  type="button"
-  class="btn"
-  ref="editButton"
-  @click="toggleToItemEditForm">
-  Edit
-  <span class="visually-hidden">{{label}}</span>
-</button>
+      <el-button
+    type="primary"
+    class="btn"
+    @click="toggleToItemEditForm">
+    Edit
+    <span class="visually-hidden">{{ label }}</span>
+  </el-button>
 
       <button type="button" class="btn btn__danger" @click="deleteToDo">
         Delete <span class="visually-hidden">{{label}}</span>

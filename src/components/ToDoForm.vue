@@ -12,7 +12,8 @@
       autocomplete="off"
       v-model.lazy.trim="label"
       class="input__lg" />
-    <button type="submit" class="btn btn__primary btn__lg">Add</button>
+    <!-- Replace the original button with el-button -->
+    <el-button type="primary" class="btn btn__primary btn__lg" @click="onSubmit">Add</el-button>
   </form>
 </template>
 
